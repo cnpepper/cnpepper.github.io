@@ -54,14 +54,18 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="本来无一物 何处惹尘埃">
-<meta property="og:url" content="https://cnpepper.github.io/archives/index.html">
+  <meta name="description" content="直接用svn审核代码很不方便，首先不能做push的审核，另外也不能进行交互。所以找了一下工具，这个工具文档还可以用的也挺多的吧。安装步骤也比较简单。git上下载相关的三个安装包，配置下apache服务就可以了。中间遇到一些问题。首先启动守护进程的时候要装下apache插件，由于apache是用yum装的直接就可以yum安装了，注意要制定php7版本.另外就是svn配置，subversion只能用观">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建Phabricator项目做代码审核">
+<meta property="og:url" content="https://cnpepper.github.io/2019/08/26/20190826223802/index.html">
 <meta property="og:site_name" content="本来无一物 何处惹尘埃">
+<meta property="og:description" content="直接用svn审核代码很不方便，首先不能做push的审核，另外也不能进行交互。所以找了一下工具，这个工具文档还可以用的也挺多的吧。安装步骤也比较简单。git上下载相关的三个安装包，配置下apache服务就可以了。中间遇到一些问题。首先启动守护进程的时候要装下apache插件，由于apache是用yum装的直接就可以yum安装了，注意要制定php7版本.另外就是svn配置，subversion只能用观">
 <meta property="og:locale" content="cn">
+<meta property="og:updated_time" content="2019-08-26T14:43:04.656Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="本来无一物 何处惹尘埃">
-  <link rel="canonical" href="https://cnpepper.github.io/archives/">
+<meta name="twitter:title" content="搭建Phabricator项目做代码审核">
+<meta name="twitter:description" content="直接用svn审核代码很不方便，首先不能做push的审核，另外也不能进行交互。所以找了一下工具，这个工具文档还可以用的也挺多的吧。安装步骤也比较简单。git上下载相关的三个安装包，配置下apache服务就可以了。中间遇到一些问题。首先启动守护进程的时候要装下apache插件，由于apache是用yum装的直接就可以yum安装了，注意要制定php7版本.另外就是svn配置，subversion只能用观">
+  <link rel="canonical" href="https://cnpepper.github.io/2019/08/26/20190826223802/">
 
 
 <script id="page-configurations">
@@ -69,13 +73,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
-    isArchive: true
+    isArchive: false
   };
 </script>
 
-  <title>Archive | 本来无一物 何处惹尘埃</title>
+  <title>搭建Phabricator项目做代码审核 | 本来无一物 何处惹尘埃</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -171,18 +175,6 @@
 
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 </nav>
 </div>
     </header>
@@ -190,98 +182,103 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          <div id="content" class="content page-archive">
+          <div id="content" class="content page-post-detail">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        
-        
-        
-          
-        
-        <span class="collection-header">Um..! 2 posts in total. Keep on posting.</span>
-      </div>
-      
-
-      
-
-  
-  
-
-  
+  <div id="posts" class="posts-expand">
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-  
 
   <article class="post" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/08/26/20190826223802/" itemprop="url">
-            <span itemprop="name">搭建Phabricator项目做代码审核</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-26T22:38:25+08:00"
-              content="2019-08-26">
-          08-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
   
   
-
   
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://cnpepper.github.io/2019/08/26/20190826223802/">
 
-  <article class="post" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
 
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/08/24/hello-world/" itemprop="url">
-            <span itemprop="name">你好世界</span>
-          </a>
-        
-      </h2>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="本来无一物 何处惹尘埃">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">搭建Phabricator项目做代码审核
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-24T11:59:10+08:00"
-              content="2019-08-24">
-          08-24
-        </time>
-      </div>
+          
+        </h1>
 
-    </header>
-  </article>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
 
+              
+                
+              
 
+              <time title="Created: 2019-08-26 22:38:25 / Modified: 22:43:04" itemprop="dateCreated datePublished" datetime="2019-08-26T22:38:25+08:00">2019-08-26</time>
+            </span>
+          
+            
 
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>直接用svn审核代码很不方便，首先不能做push的审核，另外也不能进行交互。所以找了一下工具，这个工具文档还可以用的也挺多的吧。<br>安装步骤也比较简单。<br>git上下载相关的三个安装包，配置下apache服务就可以了。<br>中间遇到一些问题。首先启动守护进程的时候要装下apache插件，由于apache是用yum装的直接就可以yum安装了，注意要制定php7版本.<br>另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。</p>
 
     </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/08/24/hello-world/" rel="next" title="你好世界">
+                  <i class="fa fa-chevron-left"></i> 你好世界
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-
+  </div>
 
 
           </div>
@@ -300,6 +297,11 @@
 
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc" data-target="post-toc-wrap">
@@ -423,5 +425,8 @@
 
 
   
+  <script src="/js/post-details.js?v=7.3.0"></script>
+
+
 </body>
 </html>
