@@ -217,11 +217,19 @@
                 
               
 
-              <time title="Created: 2019-08-26 22:38:25 / Modified: 22:43:04" itemprop="dateCreated datePublished" datetime="2019-08-26T22:38:25+08:00">2019-08-26</time>
+              <time title="Created: 2019-08-26 22:38:25" itemprop="dateCreated datePublished" datetime="2019-08-26T22:38:25+08:00">2019-08-26</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-08-27 22:50:13" itemprop="dateModified" datetime="2019-08-27T22:50:13+08:00">2019-08-27</time>
+              </span>
             
           
 
@@ -236,7 +244,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>直接用svn审核代码很不方便，首先不能做push的审核，另外也不能进行交互。所以找了一下工具，这个工具文档还可以用的也挺多的吧。<br>安装步骤也比较简单。<br>git上下载相关的三个安装包，配置下apache服务就可以了。<br>中间遇到一些问题。首先启动守护进程的时候要装下apache插件，由于apache是用yum装的直接就可以yum安装了，注意要制定php7版本.<br>另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。</p>
+          <p>直接用svn审核代码很不方便，首先不能做push的审核，另外也不能进行交互。所以找了一下工具，这个工具文档还可以用的也挺多的吧。<br>安装步骤也比较简单。<br>git上下载相关的三个安装包，配置下apache服务就可以了。<br>中间遇到一些问题。首先启动守护进程的时候要装下apache插件，由于apache是用yum装的直接就可以yum安装了，注意要制定php7版本.</p>
+<h2 id="另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。"><a href="#另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。" class="headerlink" title="另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。"></a>另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。</h2><p>svn问题解决了，主要是到web用户权限下边去永久保存一下svn的授权就好了。su web用户 执行 svn ls <a href="https://svn地址" target="_blank" rel="noopener">https://svn地址</a> 选择p 输入账号密码就行了。<br>然后再执行一次，如果还需要输入说明没有保存成功，这时候需要给web用户目录设为777权限。</p>
 
         
       
