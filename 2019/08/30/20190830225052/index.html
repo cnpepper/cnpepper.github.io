@@ -54,18 +54,18 @@
   };
 </script>
 
-  <meta name="description" content="直接用svn审核代码很不方便，首先不能做push的审核，另外也不能进行交互。所以找了一下工具，这个工具文档还可以用的也挺多的吧。安装步骤也比较简单。git上下载相关的三个安装包，配置下apache服务就可以了。中间遇到一些问题。首先启动守护进程的时候要装下apache插件，由于apache是用yum装的直接就可以yum安装了，注意要制定php7版本. 另外就是svn配置，subversion只能用">
+  <meta name="description" content="最近在对接企信的时候发现SDK不太好加入到框架里，所以自己做了composer包使用。制作过程还是比较简单的，首先就是要有composer，自己装一下，然后composer init 生成composer.json文件。这个是包里要用的，在同级目录创建src目录，里边就是你的代码了。里边所有的代码都要遵守psr-4类自动加载规范。然后再composer.json配置一下要加载的目录。这样就完成了,">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搭建Phabricator项目做代码审核">
-<meta property="og:url" content="https://cnpepper.github.io/2019/08/26/20190826223802/index.html">
+<meta property="og:title" content="20190830225052">
+<meta property="og:url" content="https://cnpepper.github.io/2019/08/30/20190830225052/index.html">
 <meta property="og:site_name" content="本来无一物 何处惹尘埃">
-<meta property="og:description" content="直接用svn审核代码很不方便，首先不能做push的审核，另外也不能进行交互。所以找了一下工具，这个工具文档还可以用的也挺多的吧。安装步骤也比较简单。git上下载相关的三个安装包，配置下apache服务就可以了。中间遇到一些问题。首先启动守护进程的时候要装下apache插件，由于apache是用yum装的直接就可以yum安装了，注意要制定php7版本. 另外就是svn配置，subversion只能用">
+<meta property="og:description" content="最近在对接企信的时候发现SDK不太好加入到框架里，所以自己做了composer包使用。制作过程还是比较简单的，首先就是要有composer，自己装一下，然后composer init 生成composer.json文件。这个是包里要用的，在同级目录创建src目录，里边就是你的代码了。里边所有的代码都要遵守psr-4类自动加载规范。然后再composer.json配置一下要加载的目录。这样就完成了,">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2019-08-27T14:50:13.382Z">
+<meta property="og:updated_time" content="2019-08-30T15:04:11.642Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="搭建Phabricator项目做代码审核">
-<meta name="twitter:description" content="直接用svn审核代码很不方便，首先不能做push的审核，另外也不能进行交互。所以找了一下工具，这个工具文档还可以用的也挺多的吧。安装步骤也比较简单。git上下载相关的三个安装包，配置下apache服务就可以了。中间遇到一些问题。首先启动守护进程的时候要装下apache插件，由于apache是用yum装的直接就可以yum安装了，注意要制定php7版本. 另外就是svn配置，subversion只能用">
-  <link rel="canonical" href="https://cnpepper.github.io/2019/08/26/20190826223802/">
+<meta name="twitter:title" content="20190830225052">
+<meta name="twitter:description" content="最近在对接企信的时候发现SDK不太好加入到框架里，所以自己做了composer包使用。制作过程还是比较简单的，首先就是要有composer，自己装一下，然后composer init 生成composer.json文件。这个是包里要用的，在同级目录创建src目录，里边就是你的代码了。里边所有的代码都要遵守psr-4类自动加载规范。然后再composer.json配置一下要加载的目录。这样就完成了,">
+  <link rel="canonical" href="https://cnpepper.github.io/2019/08/30/20190830225052/">
 
 
 <script id="page-configurations">
@@ -79,7 +79,7 @@
   };
 </script>
 
-  <title>搭建Phabricator项目做代码审核 | 本来无一物 何处惹尘埃</title>
+  <title>20190830225052 | 本来无一物 何处惹尘埃</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -193,7 +193,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://cnpepper.github.io/2019/08/26/20190826223802/">
+    <link itemprop="mainEntityOfPage" href="https://cnpepper.github.io/2019/08/30/20190830225052/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Liu">
@@ -205,7 +205,7 @@
       <meta itemprop="name" content="本来无一物 何处惹尘埃">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">搭建Phabricator项目做代码审核
+        <h1 class="post-title" itemprop="name headline">20190830225052
 
           
         </h1>
@@ -221,19 +221,11 @@
                 
               
 
-              <time title="Created: 2019-08-26 22:38:25" itemprop="dateCreated datePublished" datetime="2019-08-26T22:38:25+08:00">2019-08-26</time>
+              <time title="Created: 2019-08-30 22:51:05 / Modified: 23:04:11" itemprop="dateCreated datePublished" datetime="2019-08-30T22:51:05+08:00">2019-08-30</time>
             </span>
           
             
 
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-08-27 22:50:13" itemprop="dateModified" datetime="2019-08-27T22:50:13+08:00">2019-08-27</time>
-              </span>
             
           
 
@@ -248,8 +240,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>直接用svn审核代码很不方便，首先不能做push的审核，另外也不能进行交互。所以找了一下工具，这个工具文档还可以用的也挺多的吧。<br>安装步骤也比较简单。<br>git上下载相关的三个安装包，配置下apache服务就可以了。<br>中间遇到一些问题。首先启动守护进程的时候要装下apache插件，由于apache是用yum装的直接就可以yum安装了，注意要制定php7版本.</p>
-<h2 id="另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。"><a href="#另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。" class="headerlink" title="另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。"></a>另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。</h2><p>svn问题解决了，主要是到web用户权限下边去永久保存一下svn的授权就好了。su web用户 执行 svn ls <a href="https://svn地址" target="_blank" rel="noopener">https://svn地址</a> 选择p 输入账号密码就行了。<br>然后再执行一次，如果还需要输入说明没有保存成功，这时候需要给web用户目录设为777权限。</p>
+        <p>最近在对接企信的时候发现SDK不太好加入到框架里，所以自己做了composer包使用。制作过程还是比较简单的，首先就是要有composer，自己装一下，然后composer init 生成composer.json文件。这个是包里要用的，在同级目录创建src目录，里边就是你的代码了。里边所有的代码都要遵守psr-4类自动加载规范。然后再composer.json配置一下要加载的目录。这样就完成了,上传github，在gitpackage网站填写github上的地址发布一下。composer install安装，直接引入后use就能使用对象了。注意如果没有打版本好，要标记成dev版本。否则安装会报版本错误。另外本地开发的时候，可以使用本地的引入模式，这样就不用传上去再下载下来测试了。</p>
 
     </div>
 
@@ -266,8 +257,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/08/24/hello-world/" rel="next" title="你好世界">
-                  <i class="fa fa-chevron-left"></i> 你好世界
+                <a href="/2019/08/26/20190826223802/" rel="next" title="搭建Phabricator项目做代码审核">
+                  <i class="fa fa-chevron-left"></i> 搭建Phabricator项目做代码审核
                 </a>
               
             </div>
@@ -275,10 +266,6 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/08/30/20190830225052/" rel="prev" title="20190830225052">
-                  20190830225052 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -327,10 +314,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc">
-            <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。"><span class="nav-number">1.</span> <span class="nav-text">另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。</span></a></li></ol></div>
-          </div>
-        
       </div>
       <!--/noindex-->
 
