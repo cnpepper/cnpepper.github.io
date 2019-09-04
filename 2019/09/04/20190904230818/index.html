@@ -54,18 +54,18 @@
   };
 </script>
 
-  <meta name="description" content="直接用svn审核代码很不方便，首先不能做push的审核，另外也不能进行交互。所以找了一下工具，这个工具文档还可以用的也挺多的吧。安装步骤也比较简单。git上下载相关的三个安装包，配置下apache服务就可以了。中间遇到一些问题。首先启动守护进程的时候要装下apache插件，由于apache是用yum装的直接就可以yum安装了，注意要制定php7版本. 另外就是svn配置，subversion只能用">
+  <meta name="description" content="今天跟团队成员讨论了一下如何能打造一个有技术氛围的团队。大家提了几点，1，需要有讨论和分享。2，规范和流程。3，学习和创新。 对于这几点我们是这样理解的， 首先讨论和分享，主要是技术人员要有参与感，如果一个技术的难点的解决和实现方案没有你的参与，那么你会觉得自己就是一个工具，不知道思考，只会执行。这样给人的感觉是非常不好的，但是参与的前提是我们要有一定的技术水平后才能进行参与，所以提升自己的能力还">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搭建Phabricator项目做代码审核">
-<meta property="og:url" content="https://cnpepper.github.io/2019/08/26/20190826223802/index.html">
+<meta property="og:title" content="技术氛围讨论">
+<meta property="og:url" content="https://cnpepper.github.io/2019/09/04/20190904230818/index.html">
 <meta property="og:site_name" content="本来无一物 何处惹尘埃">
-<meta property="og:description" content="直接用svn审核代码很不方便，首先不能做push的审核，另外也不能进行交互。所以找了一下工具，这个工具文档还可以用的也挺多的吧。安装步骤也比较简单。git上下载相关的三个安装包，配置下apache服务就可以了。中间遇到一些问题。首先启动守护进程的时候要装下apache插件，由于apache是用yum装的直接就可以yum安装了，注意要制定php7版本. 另外就是svn配置，subversion只能用">
+<meta property="og:description" content="今天跟团队成员讨论了一下如何能打造一个有技术氛围的团队。大家提了几点，1，需要有讨论和分享。2，规范和流程。3，学习和创新。 对于这几点我们是这样理解的， 首先讨论和分享，主要是技术人员要有参与感，如果一个技术的难点的解决和实现方案没有你的参与，那么你会觉得自己就是一个工具，不知道思考，只会执行。这样给人的感觉是非常不好的，但是参与的前提是我们要有一定的技术水平后才能进行参与，所以提升自己的能力还">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2019-08-27T14:50:13.382Z">
+<meta property="og:updated_time" content="2019-09-04T15:21:28.658Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="搭建Phabricator项目做代码审核">
-<meta name="twitter:description" content="直接用svn审核代码很不方便，首先不能做push的审核，另外也不能进行交互。所以找了一下工具，这个工具文档还可以用的也挺多的吧。安装步骤也比较简单。git上下载相关的三个安装包，配置下apache服务就可以了。中间遇到一些问题。首先启动守护进程的时候要装下apache插件，由于apache是用yum装的直接就可以yum安装了，注意要制定php7版本. 另外就是svn配置，subversion只能用">
-  <link rel="canonical" href="https://cnpepper.github.io/2019/08/26/20190826223802/">
+<meta name="twitter:title" content="技术氛围讨论">
+<meta name="twitter:description" content="今天跟团队成员讨论了一下如何能打造一个有技术氛围的团队。大家提了几点，1，需要有讨论和分享。2，规范和流程。3，学习和创新。 对于这几点我们是这样理解的， 首先讨论和分享，主要是技术人员要有参与感，如果一个技术的难点的解决和实现方案没有你的参与，那么你会觉得自己就是一个工具，不知道思考，只会执行。这样给人的感觉是非常不好的，但是参与的前提是我们要有一定的技术水平后才能进行参与，所以提升自己的能力还">
+  <link rel="canonical" href="https://cnpepper.github.io/2019/09/04/20190904230818/">
 
 
 <script id="page-configurations">
@@ -79,7 +79,7 @@
   };
 </script>
 
-  <title>搭建Phabricator项目做代码审核 | 本来无一物 何处惹尘埃</title>
+  <title>技术氛围讨论 | 本来无一物 何处惹尘埃</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -193,7 +193,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://cnpepper.github.io/2019/08/26/20190826223802/">
+    <link itemprop="mainEntityOfPage" href="https://cnpepper.github.io/2019/09/04/20190904230818/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron Liu">
@@ -205,7 +205,7 @@
       <meta itemprop="name" content="本来无一物 何处惹尘埃">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">搭建Phabricator项目做代码审核
+        <h1 class="post-title" itemprop="name headline">技术氛围讨论
 
           
         </h1>
@@ -221,19 +221,11 @@
                 
               
 
-              <time title="Created: 2019-08-26 22:38:25" itemprop="dateCreated datePublished" datetime="2019-08-26T22:38:25+08:00">2019-08-26</time>
+              <time title="Created: 2019-09-04 23:08:30 / Modified: 23:21:28" itemprop="dateCreated datePublished" datetime="2019-09-04T23:08:30+08:00">2019-09-04</time>
             </span>
           
             
 
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-08-27 22:50:13" itemprop="dateModified" datetime="2019-08-27T22:50:13+08:00">2019-08-27</time>
-              </span>
             
           
 
@@ -248,8 +240,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>直接用svn审核代码很不方便，首先不能做push的审核，另外也不能进行交互。所以找了一下工具，这个工具文档还可以用的也挺多的吧。<br>安装步骤也比较简单。<br>git上下载相关的三个安装包，配置下apache服务就可以了。<br>中间遇到一些问题。首先启动守护进程的时候要装下apache插件，由于apache是用yum装的直接就可以yum安装了，注意要制定php7版本.</p>
-<h2 id="另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。"><a href="#另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。" class="headerlink" title="另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。"></a>另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。</h2><p>svn问题解决了，主要是到web用户权限下边去永久保存一下svn的授权就好了。su web用户 执行 svn ls <a href="https://svn地址" target="_blank" rel="noopener">https://svn地址</a> 选择p 输入账号密码就行了。<br>然后再执行一次，如果还需要输入说明没有保存成功，这时候需要给web用户目录设为777权限。</p>
+        <p>今天跟团队成员讨论了一下如何能打造一个有技术氛围的团队。大家提了几点，1，需要有讨论和分享。2，规范和流程。3，学习和创新。</p>
+<p>对于这几点我们是这样理解的，</p>
+<p>首先讨论和分享，主要是技术人员要有参与感，如果一个技术的难点的解决和实现方案没有你的参与，那么你会觉得自己就是一个工具，不知道思考，只会执行。这样给人的感觉是非常不好的，但是参与的前提是我们要有一定的技术水平后才能进行参与，所以提升自己的能力还是最重要的。</p>
+<p>第二是规范和流程，这个包括代码的规范，架构的规范，流程的规范等等，技术人员喜欢规范，喜欢优雅，不喜欢杂乱没有逻辑的事情，所以这个不用过多解释，但是这些也要整个团队一起努力，保持。</p>
+<p>最后是学习和创新，这是技术人员的基本素质，但是能真正做到的没有多少，保持自己对技术的执著和热情，能不断深入学习技术，并且学以致用，这才是真正成为优秀技术人员的根本，如果一群这样的人在一起想没有技术氛围也不可能，所以最后的结论是还是要跟优秀的人在一起。。</p>
 
     </div>
 
@@ -266,8 +261,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/08/24/hello-world/" rel="next" title="你好世界">
-                  <i class="fa fa-chevron-left"></i> 你好世界
+                <a href="/2019/09/01/20190901193150/" rel="next" title="读书分享《清单革命》">
+                  <i class="fa fa-chevron-left"></i> 读书分享《清单革命》
                 </a>
               
             </div>
@@ -275,10 +270,6 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/08/30/20190830225052/" rel="prev" title="制作企业微信SDK的composer包">
-                  制作企业微信SDK的composer包 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -327,10 +318,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc">
-            <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。"><span class="nav-number">1.</span> <span class="nav-text">另外就是svn配置，subversion只能用观察模式，公司的https有问题反正最后看看怎么解决再用吧。</span></a></li></ol></div>
-          </div>
-        
       </div>
       <!--/noindex-->
 
