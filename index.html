@@ -188,6 +188,90 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://cnpepper.github.io/2019/09/28/20190928235847/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="本来无一物 何处惹尘埃">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2019/09/28/20190928235847/" class="post-title-link" itemprop="url">MYSQL5.7主从数据库配置和laravel读写分离设置</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2019-09-28 23:59:05" itemprop="dateCreated datePublished" datetime="2019-09-28T23:59:05+08:00">2019-09-28</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-09-29 00:09:29" itemprop="dateModified" datetime="2019-09-29T00:09:29+08:00">2019-09-29</time>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>按照网上的教程整体下来还是比较容易的。主要有一些问题和注意的地方记录一下。<br>1,主从库的版本要尽量保持一致，至少前两个版本好要一致。我的没有使用完全一致的，一个是mysql5.7.22，一个是mysql5.7.29应该没有问题。看了网上的一些说法，如果数据库大版本不一致通常都会出问题。<br>2，主从同步主要是通过binlog日志来实现的。所以配置主库的时候通常要开启binlog，如果已经开的就可以不用去开启binlog的那两个配置了，不知道重复设置会不会导致一些奇怪的问题。<br>3，还有可以设置要忽略同步的数据库和设置需要同步的数据库，不设置默认同步全部，除了明确忽略的。设置了只同步设置的。<br>4，如果主库已经有数据了，要先把数据导到从库去，保证一致。配置好主库后，查看show master status记住两个关键参数，file，len。从库配置的时候一定要填写正确的。<br>5，从库配置正确后，查看状态，IO/SQLRUNING,这两个参数一定都是yes的。</p>
+<p>laravel配置读写分离很简单，直接在config/database.php里配置就行了。但是要注意主从会有一个同步延迟的问题，laravel已经考虑到了参数设置成true就行。但是我发现我们查询的时候用到了主动创建的临时表，这样会导致一直走的还是主库，不会走从库查询。并且效率上，主从分离后，要慢好多，这个肯定是不能忍受的，所以暂时还没开启，后边研究好了之后再配置。</p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://cnpepper.github.io/2019/09/18/20190918091344/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -902,7 +986,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
